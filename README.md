@@ -36,6 +36,8 @@ visually-impaired users)
 
 ![Einfarbig schwarze 3D-gedruckte Karte der Innenstadt von Stuttgart-Vaihingen auf dem Druckerbett eines Prusa-MK3S-Druckers. Die Karte ist annährend quadratisch und zeigt Straßen, Gebäude
 und Querungshilfen in jeweils unterschiedlicher Höhe. A single-color black 3D-printed map of Vaihingen Center, Stuttgart on the bed of a Prusa MK3S printer. The map is rectangular and shows streets, buildings, and tactile features, each in its assigned height.](https://github.com/HaptaMap/MapGenerator/blob/main/images/VaihingenMitteMap.jpg)
+![Einfarbig multifarbe 3D-gedruckte Karte der Innenstadt von Stuttgart-Vaihingen in die hande eines Benutzers. Die Karte ist annährend quadratisch und zeigt Straßen (schwartz), Gebäude (rosa)
+und Querungshilfen (weiß) in jeweils unterschiedlicher Höhe. A multicolor 3D-printed map of Vaihingen Center, Stuttgart in a user's hands. The map is rectangular and shows streets, buildings, and tactile features, each in its assigned height.](https://github.com/HaptaMap/MapGenerator/blob/main/images/VaihingenMitteMapMulticolor.jpg)
 
 # Wie installere ich es? / How do I install this?
 
