@@ -2,6 +2,8 @@
  
 Haptische Karten aus dem 3D-Drucker
 
+Tactile maps on the 3D Printer
+
 # Was ist das? / What is this?
 
 Für blinde oder sehbehinderte Menschen ist es sehr schwierig, sich
