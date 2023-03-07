@@ -43,7 +43,7 @@ und Querungshilfen (weiß) in jeweils unterschiedlicher Höhe. A multicolor 3D-p
 
 (ausführliche Anleitung ist in Arbeit)
 
-1. Installiere [OpenSCAD](https://openscad.org/downloads.html) 
+1. Installiere [Blender](https://www.blender.org/) 
 2. Lade dir das Repository herunter.
 3. Installiere die Python-dependencies
 
@@ -55,7 +55,7 @@ $ pip install -r requirements.txt
 
 (Directions are still in progress...)
 
-1. Install [OpenSCAD](https://openscad.org/downloads.html)
+1. Install [Blender](https://www.blender.org/)
 2. Download the repository
 3. Install the python dependencies:
 
@@ -67,9 +67,17 @@ $ pip install -r requirements.txt
 
 (ausführliche Anleitung ist in Arbeit)
 
+(Übersetzung kommt bald...)
+
 ---
 
 (Directions are still in progress...)
+
+There are three main steps:
+
+1. Edit `test_map.py` to specify the `MAP_TARGET` and `RADIUS` variables. It is easist to get the latitude/longitude from the URL of [OpenStreetMap](https://www.openstreetmap.org). Radius is in meters from the center.
+2. Run `test_map.py`. This creates a file called `test_map.svg` in the current directory.
+3. Run `blenderExtrude.py`. This creates a file called `test_map.stl` in the current directory, which can be 3D printed.
 
 # Was kommt als nächstes? / What comes next?
 
