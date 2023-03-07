@@ -35,7 +35,7 @@ for obj in bpy.data.collections[1].all_objects:
 #bpy.data.objects['Cube'].scale = [ 2.75, 2.75, 0.1 ]
 #bpy.data.objects['Cube'].location = [ 2.75, 2.75, 0.1 ]
 bpy.data.objects['Cube'].scale = [ 5, 5, 0.2 ]
-bpy.data.objects['Cube'].location = [ 100, 110, 0.2 ]
+bpy.data.objects['Cube'].location = [ 156, 165, 0.2 ]
 #bpy.data.objects['Cube'].hide_viewport = True
 
 
@@ -51,6 +51,25 @@ bpy.data.objects['Cube'].location = [ 100, 110, 0.2 ]
 # And delete the cube
 # bpy.data.objects.remove(bpy.data.objects['Cube'], do_unlink=True)
 
+# # Try unioning everything in Blender. This works poorly and makes a lot of 
+# # crap edges
+# names = [ obj.name for obj in bpy.data.collections[1].all_objects]
+# for name in names:
+#     obj = bpy.data.objects[name]
+#     print(obj)
+#     if obj.name == 'Curve':
+#         # skip because we can't union it to itself
+#         continue
+#     uname = f'BaseUnion{name}'
+#     bpy.data.objects['Curve'].modifiers.new(type='BOOLEAN', name=uname)
+#     bpy.data.objects['Curve'].modifiers[uname].operation = 'UNION'
+#     bpy.data.objects['Curve'].modifiers[uname].object = obj
+#     bpy.data.objects['Curve'].select_set(True)
+#     bpy.ops.object.modifier_apply(apply_as='DATA', modifier=uname)
+#     bpy.data.objects['Curve'].select_set(False)
+#     obj.hide_viewport = True
+
+
 # Set selection for exporting (so we don't get the bounding cube)
 #bpy.ops.object.select_all(action='DESELECT')
 #for obj in bpy.data.collections[1].all_objects:
@@ -58,4 +77,4 @@ bpy.data.objects['Cube'].location = [ 100, 110, 0.2 ]
 
 #bpy.ops.export_mesh.stl(filepath=bpy.path.abspath("//test_map.stl"), use_selection=True, check_existing=False)
 
-bpy.ops.export_mesh.stl(filepath=bpy.path.abspath("//test_map.stl"), check_existing=False)
+bpy.ops.export_mesh.stl(filepath=bpy.path.abspath("//test_map.stl"),  check_existing=False)
